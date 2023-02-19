@@ -97,10 +97,22 @@
         margin-top: 25px;
       }
 
+      .dark {
+        background: black;
+        color: white;
+      }
+
+      .dark .container {
+        background: gray;
+      }
+
+      .dark a {
+        color: white;
+      }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Change Theme</button>
     <div class="container">
       <h1>🌕The Moon🌒</h1>
       <h2>Earth's only natural satellite.</h2>
@@ -137,20 +149,23 @@
         />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/225/original/pedro-lastra-wCujVcf0JDw-unsplash.jpg?1676822851"
-          alt="full moon" class="full-moon"
+          alt="full moon"
+          class="full-moon"
         />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/234/original/paolo-lentini-Fxqz1-YkDWI-unsplash.jpg?1676824190"
-          alt="crescent moon" class="crescent-moon"
+          alt="crescent moon"
+          class="crescent-moon"
         />
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/231/original/andrew-russian-UuVkBMbNSlM-unsplash.jpg?1676824134" 
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/231/original/andrew-russian-UuVkBMbNSlM-unsplash.jpg?1676824134"
           alt="glitter moon"
         />
       </div>
       <a
         href="https://solarsystem.nasa.gov/moons/earths-moon/lunar-phases-and-eclipses/#:~:text=These%20eight%20phases%20are%2C%20in,month%20(every%2029.5%20days)."
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/165/original/ramiro-martinez-HpA-AYXVQ6s-unsplash.jpg?1676752163"
@@ -161,7 +176,8 @@
 
       <a
         href="https://solarsystem.nasa.gov/moons/earths-moon/overview/"
-        target="_blank" class="nasa-link"
+        target="_blank"
+        class="nasa-link"
         >📖Read More on NASA</a
       >
     </div>
@@ -174,5 +190,20 @@
         >Stephanie Barnhouse</a
       >
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+//also an option body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
