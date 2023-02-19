@@ -7,7 +7,17 @@
     <title>The Moon</title>
     <style>
       body {
-        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+          ),
+          radial-gradient(
+              at top center,
+              rgba(255, 255, 255, 0.4) 0%,
+              rgba(0, 0, 0, 0.4) 120%
+            )
+            #989898;
       }
 
       h1,
@@ -41,7 +51,13 @@
       }
 
       button:hover {
-        background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);;
+        background: linear-gradient(
+          110.6deg,
+          rgb(156, 116, 129) -18.3%,
+          rgb(67, 54, 74) 16.4%,
+          rgb(47, 48, 67) 68.2%,
+          rgb(27, 23, 36) 99.1%
+        );
         color: white;
         border-color: white;
         cursor: pointer;
@@ -68,7 +84,7 @@
       }
 
       p {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 1.5;
       }
 
@@ -98,7 +114,13 @@
       }
 
       .dark {
-        background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+        background: linear-gradient(
+          110.6deg,
+          rgb(156, 116, 129) -18.3%,
+          rgb(67, 54, 74) 16.4%,
+          rgb(47, 48, 67) 68.2%,
+          rgb(27, 23, 36) 99.1%
+        );
         color: white;
       }
 
@@ -115,19 +137,18 @@
     <button class="theme-button">Change Theme</button>
     <div class="container">
       <h1>🌕The Moon🌒</h1>
-      <h2>Earth's only natural satellite.</h2>
+      <h2>Star gazing at Earth's only natural satellite</h2>
       <p>
         Earth's Moon is the only place beyond Earth where humans have set foot.
 
         <br />
         <br />
 
-        The Latest The Next Full Moon is the Wolf or Ice Moon The brightest and
-        largest object in our night sky, the Moon makes Earth a more livable
-        planet by moderating our home planet's wobble on its axis, leading to a
-        relatively stable climate. It also causes tides, creating a rhythm that
-        has guided humans for thousands of years. The Moon was likely formed
-        after a Mars-sized body collided with Earth.
+        Every beginner should start by admiring the moon with an unaided eye.
+        Just go outside at night and stare at the universe and think about what
+        you see. You may feel disappointed at first, thinking that you are not
+        seeing much, but just like with any other hobby, stargazing also
+        requires some practice, and you will get better with time.
 
         <br />
         <br />
@@ -141,6 +162,17 @@
         Earth's only natural satellite is simply called "the Moon" because
         people didn't know other moons existed until Galileo Galilei discovered
         four moons orbiting Jupiter in 1610.
+
+        <br />
+        <br />
+
+        If you want to take this newfound hobby seriously, you must learn more
+        about astronomy in general. You do not have to become an expert in the
+        field, but knowing what to look for in the sky is a great way to develop
+        your skills and will give you a sense of accomplishment. It is easy to
+        grab your binoculars or telescope and stare at the stars up close, but
+        it will be even better when you know some of the constellations and can
+        observe them.
       </p>
       <div class="grid">
         <img
@@ -195,7 +227,7 @@
       function changeTheme() {
         let body = document.querySelector("body");
 
-//also an option body.classList.toggle("dark");
+        //also an option body.classList.toggle("dark");
 
         if (body.classList.contains("dark")) {
           body.classList.remove("dark");
